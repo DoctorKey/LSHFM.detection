@@ -13,27 +13,8 @@ from pycocotools.coco import COCO
 import dataset.transforms as T
 
 def get_data_path():
-    hostname = socket.gethostname()
-    if 'amax' == hostname:
-        # M40
-        root = '/opt/Dataset/COCO2017'
-    elif 'Pascal2' in hostname:
-        root = '/opt/Dataset/COCO2017'
-    elif 'Pascal1' in hostname:
-        root = '/opt/Dataset/COCO2017'
-    elif 'ubuntu' in hostname:
-        # V100
-        root = '/root/Dataset/COCO2017'
-    elif 'admin.cluster' in hostname:
-        # 2080Ti
-        root = '/amax/opt/Dataset/COCO2017'
-    elif 'GPU4' in hostname:
-        root = '/opt/Dataset/VOC'
-        #root = '/mnt/ramdisk/COCO2017'
-    elif 'gpu3' in hostname:
-        root = '/opt/Dataset/COCO2017'
-    elif 'digix' in hostname:
-        root = '/mnt/ramdisk/COCO2017'
+    # TODO: edit data_path
+    root = "/opt/Dataset/COCO2017"
     return root
 
 
@@ -271,5 +252,3 @@ def get_coco():
 
 if __name__ == '__main__':
     train_dataset, test_dataset, num_classes = get_coco()
-    import IPython
-    IPython.embed()

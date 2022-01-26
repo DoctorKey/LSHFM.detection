@@ -8,11 +8,15 @@ This is the PyTorch source code for [Distilling Knowledge by Mimicking Features]
 * pytorch 1.7.1
 * torchvision 0.8.2
 
+## Prepare the dataset
+
+Please prepare the COCO and VOC datasets by youself. Then you need to fix the `get_data_path` function in `src/dataset/coco_utils.py` and `src/dataset/voc_utils.py`. 
+
 ## Run
 
 You can run the experiments by
 ```
-PORT=4444 bash experiments/script.sh 0,1,2,3 
+PORT=4444 bash experiments/[script name].sh 0,1,2,3 
 ```
 
 the training set contains VOC2007 trainval and VOC2012 trainval, while the testing set is VOC2007 test.
@@ -85,12 +89,14 @@ python src/visual.py --dataset voc07 --idx 2 --model fasterrcnn_resnet50_fpn --c
 
 If you find this code useful in your research, please consider citing us:
 
+```
 @article{LSHFM,
   title={Distilling knowledge by mimicking features},
   author={Wang, Guo-Hua and Ge, Yifan and Wu, Jianxin},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2021},
 }
+```
 
 ## Acknowledgement
 

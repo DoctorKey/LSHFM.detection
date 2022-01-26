@@ -40,27 +40,8 @@ VOC_VIS_LABEL_NAMES = (
 )
 
 def get_data_path():
-    hostname = socket.gethostname()
-    if 'amax' == hostname:
-        # M40
-        root = '/opt/Dataset/VOCdevkit'
-    elif 'Pascal2' in hostname:
-        root = '/opt/Dataset/VOCdevkit'
-    elif 'Pascal1' in hostname:
-        root = '/opt/Dataset/VOCdevkit'
-    elif 'ubuntu' in hostname:
-        # V100
-        root = '/root/Dataset/VOC'
-    elif 'admin.cluster' in hostname:
-        # 2080Ti
-        root = '/amax/opt/Dataset'
-    elif 'GPU4' in hostname:
-        #root = '/opt/Dataset/VOC'
-        root = '/mnt/ramdisk/VOC'
-    elif 'gpu3' in hostname:
-        root = '/opt/Dataset'
-    elif 'digix' in hostname:
-        root = '/mnt/ramdisk/VOC'
+    # TODO: edit data_path
+    root = "/opt/Dataset/VOCdevkit"
     return root
 
 
@@ -194,6 +175,4 @@ def get_voc0712():
 
 if __name__ == '__main__':
     train_dataset, test_dataset, num_classes = get_voc07()
-    import IPython
-    IPython.embed()
 
