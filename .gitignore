@@ -1,0 +1,6 @@
+*.pyc
+results
+transient
+zca
+*.ckpt
+*.pth
