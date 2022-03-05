@@ -1,6 +1,14 @@
 # LSHFM.detection
 
-This is the PyTorch source code for [Distilling Knowledge by Mimicking Features](https://arxiv.org/abs/2011.01424). And this project contains code for object detection with mimicking features. For image classification, please visit [LSHFM.classification](https://github.com/DoctorKey/LSHFM.classification).
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/in-defense-of-feature-mimicking-for-knowledge/knowledge-distillation-on-imagenet)](https://paperswithcode.com/sota/knowledge-distillation-on-imagenet?p=in-defense-of-feature-mimicking-for-knowledge)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/in-defense-of-feature-mimicking-for-knowledge/knowledge-distillation-on-coco)](https://paperswithcode.com/sota/knowledge-distillation-on-coco?p=in-defense-of-feature-mimicking-for-knowledge)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/in-defense-of-feature-mimicking-for-knowledge/knowledge-distillation-on-pascal-voc)](https://paperswithcode.com/sota/knowledge-distillation-on-pascal-voc?p=in-defense-of-feature-mimicking-for-knowledge)
+
+This is the PyTorch source code for [Distilling Knowledge by Mimicking Features](https://arxiv.org/abs/2011.01424). We provide all codes for three tasks.
+
+* single-class image classification: [LSHFM.singleclassification](https://github.com/DoctorKey/LSHFM.singleclassification)
+* multi-class image classification: [LSHFM.multiclassification](https://github.com/DoctorKey/LSHFM.multiclassification)
+* object detection: [LSHFM.detection](https://github.com/DoctorKey/LSHFM.detection)
 
 ## dependence
 
